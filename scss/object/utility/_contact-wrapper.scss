@@ -1,0 +1,11 @@
+.u-contact-wrapper {
+    background-color: $gray;
+    padding: 60px 0;
+
+    @include tab {
+        padding-bottom:60px;
+    };
+    @include sp {
+    
+    };
+}

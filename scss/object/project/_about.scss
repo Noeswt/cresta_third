@@ -1,0 +1,57 @@
+.p-about {
+    margin: 240px 0 80px;
+
+    &__wrapper {
+        position: relative;
+        background-image: url(../img/about.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 607px;
+
+        @include tab {
+            height: 750px;
+        };
+        @include sp {
+        
+        };
+
+        &__box {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50px;
+            width: 65%;
+            background-color: $cwhite;
+            padding: 35px;
+            box-sizing: border-box;
+
+            @include tab {
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+            };
+            @include sp {
+            
+            };
+
+            &__ttl {
+                margin-bottom: 30px;
+            }
+
+            &__text {
+                margin-bottom: 65px;
+                line-height: 1.8;
+                font-family: 'Noto Sans JP', sans-serif;
+
+                @include tab {
+
+                };
+                @include sp {
+                    font-size: 14px
+                };
+            }
+        }
+    }
+}

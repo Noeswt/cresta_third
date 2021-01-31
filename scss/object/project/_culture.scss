@@ -1,0 +1,17 @@
+.p-culture {    
+    &__img {
+        margin-bottom: 30px;
+
+        @include tab {
+            width: 80vw;
+        };
+        @include sp {
+            width: 100%;
+        };
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+}

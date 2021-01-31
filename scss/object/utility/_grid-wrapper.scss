@@ -1,0 +1,13 @@
+.u-grid-wrapper {
+    background-color: $gray;
+    padding-top: 60px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+
+    @include tab {
+        padding-bottom:30px;
+    };
+    @include sp {
+    
+    };
+}

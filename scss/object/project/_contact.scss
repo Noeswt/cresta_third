@@ -1,0 +1,30 @@
+.p-contact {
+    padding: 0 30px;
+
+    @include sp {
+        padding: 0 15px;
+    };
+
+    &__box {
+        display: grid;
+        gap: 80px;
+        grid-template-columns: 1fr 1fr;
+
+        @include tab {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 80vw;
+        };
+        @include sp {
+            width: 100%
+        };
+
+        &__inner {
+            p {
+                margin-bottom: 60px;
+                line-height: 1.8;
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+        }
+    }
+}

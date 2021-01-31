@@ -1,0 +1,67 @@
+.p-about-visual {
+    height: 50vh;
+    margin-bottom: 120px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $cblack;
+        width: 50%;
+        height: 50%;
+        z-index: -1;
+
+        @include tab {
+            width: 80%;
+        };
+    }
+
+    &__sv {
+        position: relative;
+        width: 70vw;
+        height: 40vh;
+        background-image: url(../img/about-visual.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__box {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            color: $cwhite;
+
+            @include tab {
+                right: 20%;
+            };
+
+            &__text {
+                p {
+                    margin-bottom: 20px;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 20px;
+
+                    @include tab {
+                        font-size: 16px;
+                    };
+                }
+            }
+
+            &__ttl {
+                p {
+                    font-size: 70px;
+
+                    @include tab {
+                        font-size: 10vw;
+                    };
+                    @include sp {
+                        font-size: 10vw;
+                    };
+                }
+            }
+        }
+    }
+}

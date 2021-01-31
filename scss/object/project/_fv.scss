@@ -1,0 +1,63 @@
+.p-fv {
+    height: 100vh;
+    margin-bottom: 120px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $cblack;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+
+        @include tab {
+            width: 80%;
+        };
+    }
+
+    &__mv {
+        position: relative;
+        width: 70vw;
+        height: 85vh;
+        background-image: url(../img/main_visual.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__box {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            color: $cwhite;
+
+            @include sp {
+                right: 20%
+            };
+
+            &__text {
+                p {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+
+                    @include tab {
+                        font-size: 16px;
+                    };
+                }
+            }
+
+            &__ttl {
+                p {
+                    font-size: 80px;
+
+                    @include tab {
+                        font-size: 60px;
+                    };
+                }
+            }
+        }
+    }
+}

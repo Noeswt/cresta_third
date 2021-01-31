@@ -1,0 +1,43 @@
+.p-topics {
+    padding: 0 30px;
+
+    @include sp {
+        padding: 0 15px;
+    };
+
+    &__box {
+        width: 60vw;
+        margin: 0 0 30px auto;
+
+        @include tab {
+            width: 100%;
+        };
+        @include sp {
+        
+        };
+
+        &__inner {
+            margin-bottom: 30px;
+
+            time {
+                color: $time;
+            }
+
+            p {
+                margin-top: 20px;
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+        }
+    }
+
+    &__btn {
+        text-align: right;
+
+        @include tab {
+            text-align: left;
+        };
+        @include sp {
+        
+        };
+    }
+}

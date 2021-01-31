@@ -1,0 +1,100 @@
+.p-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        &__ttl {
+            font-size: 35px;
+            line-height: 100px;
+            color: $cblack;
+
+            a {
+                color: $cwhite;
+                font-family: 'Montserrat', sans-serif;
+
+                span {
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &__right {
+        &__nav {
+            display: none;
+            width: 50vw;
+            height: 100vh;
+            text-align: center;
+
+            @include tab {
+                width: 80vw;
+            };
+            @include sp {
+                width: 100vw;
+            };
+
+            &.menu-open {
+                display: block;
+                position: absolute;
+                right: 0;
+                background-color: rgba($color: $cblack, $alpha: .9);
+            }
+
+            ul {
+                width: 100%;
+                padding-top: 30vh;
+
+                li {
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 40px;
+
+                    a {
+                        font-size: 30px;
+                        color: $cwhite;
+                    }
+                }
+            }
+        }
+
+        &__burger-btn {
+            position: absolute; 
+            top: 50%;            
+            right: 2.5vw;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            outline: none !important;
+
+            &.menu-open {
+                & > span {
+                    &:nth-child(1) {
+                        transform: translateY(11px) rotate(135deg);
+                    }
+
+                    &:nth-child(2) {
+                        transform: scaleX(0);
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(-11px) rotate(-135deg);
+                    }
+                }
+            }
+
+            &__bar {
+                display: block;
+                width: 40px;
+                height: 2px;
+                background-color: $cwhite;
+                margin-bottom: 9px;
+                transition: all .7s;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

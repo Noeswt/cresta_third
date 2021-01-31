@@ -1,0 +1,14 @@
+.u-grid1 {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+    // margin-bottom: 120px;
+
+    @include tab {
+        display: block;
+    };
+    @include sp {
+        padding: 0 15px
+    };
+}

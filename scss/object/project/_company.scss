@@ -1,0 +1,35 @@
+.p-company {
+    padding: 0 30px;
+
+    @include sp {
+        padding: 15px;
+    };
+
+    iframe {
+        width: 100%;
+        // margin-bottom: 120px;
+    }
+
+    &__dl {
+        width: 50vw;
+        margin: 0 0 60px auto;
+
+        @include tab {
+            width: 100%;
+            margin: 0;
+        };
+        @include sp {
+        
+        };
+
+        &__box {
+            display: flex;
+            font-family: 'Noto Sans JP', sans-serif;
+
+            dt {
+                width: 100px;
+                margin-right: 50px;
+            }
+        }
+    }
+}

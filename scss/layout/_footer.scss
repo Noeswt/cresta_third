@@ -1,0 +1,13 @@
+.l-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: $footer;
+    color: $cwhite;
+
+    small {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,52 @@
+.p-ceo {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @include tab {
+
+    };
+    @include sp {
+        padding: 15px;
+    };
+
+    &__box {
+        width: 80%;
+        background-color: $gray;
+        margin: 0 0 0 20%;
+        padding: 130px;
+        box-sizing: border-box;
+
+        @include tab {
+            width: 85%;
+            padding: 100px 30px;
+        };
+        @include sp {
+            width: 100%;
+            margin: 0;
+        };
+
+        &__img {
+            position: absolute;
+            top: -180px;
+            left: 0;
+            width: 400px;
+            padding-left: 30px;
+
+            @include tab {
+                top: -180px;
+                width: 300px;
+            };
+            @include sp {
+                padding: 0;
+            };
+        }
+
+        p {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+    }
+}

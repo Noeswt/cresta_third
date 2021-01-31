@@ -1,0 +1,25 @@
+.p-vision {
+    padding-left: 25vw;
+    margin-bottom: 260px;
+
+    @include tab {
+        padding-left: 15vw;
+    };
+    @include sp {
+        padding: 0 15px;
+    };
+
+    &__sub-ttl {
+        font-family:  'Montserrat', sans-serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        p {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+    }
+}
